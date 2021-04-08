@@ -3,7 +3,7 @@
   <b-navbar class="menu" type="dark" variant="dark">
       <MenuSlidebar />
       <div >
-        <b-avatar badge badge-variant="success" src="https://media-exp1.licdn.com/dms/image/C4D03AQGwOTp8p1SnzA/profile-displayphoto-shrink_800_800/0/1596717452186?e=1620864000&v=beta&t=DpLc64lyskgljWlorLrEk5_xv1PfLNZsPkbtYrLYxac"></b-avatar>
+        <b-avatar badge badge-variant="success" src="https://media-exp1.licdn.com/dms/image/C4D03AQHIFsXtyszNCA/profile-displayphoto-shrink_200_200/0/1617899245079?e=1623283200&v=beta&t=uCK-rB8uXDFIR3UC2S8Sje1IrRuGTJFwskcGBYRBYN8"></b-avatar>
       </div>
   </b-navbar>
 </div>
