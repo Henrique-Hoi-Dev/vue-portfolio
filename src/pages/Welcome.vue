@@ -2,11 +2,11 @@
   <div class="title">
     <h1 v-html="paper"></h1>
       <div class="card-grid">
-          <div>
+          <div class="animate__animated animate__lightSpeedInRight">
             <b-card-group deck>
               <b-card img-src="https://kinsta.com/pt/wp-content/uploads/sites/3/2019/06/que-e-o-github-1024x512.png"  img-alt="Card image" img-top>
                 <b-card-text>
-                  Projeto segue o link do repositorio
+                  Project follows the repository link
                   <a target="_blank" href="https://github.com/Henrique-Hoi-Dev/avaliacao-front-end-sponte">
                   Repo
                   </a>
@@ -15,7 +15,7 @@
 
               <b-card img-src="https://kinsta.com/pt/wp-content/uploads/sites/3/2019/06/que-e-o-github-1024x512.png" img-alt="Card image" img-bottom>
                 <b-card-text>
-                  Projeto segue o link do repositorio
+                  Project follows the repository link
                   <a target="_blank" href="https://github.com/Henrique-Hoi-Dev/gobarber">
                   Repo
                   </a>               
@@ -25,11 +25,11 @@
           </div>
       </div>
       <div class="card-grid">
-          <div>
+          <div class="animate__animated animate__lightSpeedInRight">
             <b-card-group deck>
               <b-card img-src="https://kinsta.com/pt/wp-content/uploads/sites/3/2019/06/que-e-o-github-1024x512.png" img-alt="Card image" img-top>
                 <b-card-text>
-                  Projeto segue o link do repositorio
+                  Project follows the repository link
                   <a target="_blank" href="https://github.com/Henrique-Hoi-Dev/WebApi-asp.NET">
                   Repo
                   </a>  
@@ -38,7 +38,7 @@
 
               <b-card img-src="https://kinsta.com/pt/wp-content/uploads/sites/3/2019/06/que-e-o-github-1024x512.png" img-alt="Card image" img-bottom>
                 <b-card-text>
-                  Projeto segue o link do repositorio
+                  Project follows the repository link
                   <a target="_blank" href="https://github.com/Henrique-Hoi-Dev/ilia-frontend-challenge">
                   Repo
                   </a>  
@@ -51,13 +51,12 @@
 </template>
 
 <script>
-
  
 export default {
   name: "Welcome",
   data() {
     return {
-      titeleText: "Bem vindo ao meu Portfólio! Meu nome é Henrique Hoinacki...",
+      titeleText: "Welcome to my Portfolio! My name is Henrique Hoinacki...",
       paper: '',
       timer: null
     }
@@ -90,12 +89,12 @@ export default {
 }
 </script>
 
-<style scope>
+<style scoped>
   h1 {
     display: inline;
     border-right: 2px black solid;
     animation: typebar 0.s steps(40) infinite;
-    font-weight: 700;  
+    font-weight: 800;  
   }
   .title {
     margin-top: 10px;

@@ -1,50 +1,52 @@
 <template>
   <div class="hello">
-      <h2>Um pouco da minha história</h2>
-    <div>
+      <h2>A little of my history</h2>
+    <div class="animate__animated animate__fadeInLeft animate__fasts">
       <b-img :src="require('@/assets/javaScript.png')"></b-img>
       <b-img :src="require('@/assets/logo.png')"></b-img>
       <b-img :src="require('@/assets/react.png')"></b-img>
       <b-img :src="require('@/assets/nodejs.png')"></b-img>
-    </div>   
+    </div>
+      <div class="animate__animated animate__fadeInRight animate__fast">
         <p>
          <ul>
           <li>
-          Comecei trabalhando num provedor de internet, 
-          nesse período foi onde tive meu primeiros contatos com servidores linux
+          I started working at an internet provider,
+          that period was where I had my first contacts with linux servers
           </li>
           <li>
-          para fazer configurações e colocar algum web 
-          site no ar pelo Apache 
+          to make settings and put some web
+          website on the air by Apache
+          I worked there for a while, but I had to move to another city       
           </li>
           <li>
-          trabalhei por um tempo lá, mas precisei mudar de cidade        
+          there was where I got a job
+          of technician where I did maintenance and configuration of television sets,         
           </li>
           <li>
-          lá foi onde eu consegui um trabalho
-          de técnico onde eu fazia manutenção e configuração de aparelhos da televisão,         
+          but i also worked doing some freelance developing some portals and
+          dashboard using ReactJS
           </li>
           <li>
-          mas eu também trabalhei fazendo alguns freelance desenvolvendo alguns portais e 
-          dashboard usando ReactJS 
+          and nodeJS and postgreSQL database
+          after a while I decided to find a job in the area of development
+          <br>
+           and when I got my first job, I worked as a backend with the .NET core language   
           </li>
           <li>
-          e nodeJS e banco de dados postgreSQL 
-          depois de um tempo eu resolvi achar um trabalho na área de desenvolvimento web 
+          language that I had little knowledge
+          but with this work I managed to have a great experience.   
           </li>
           <li>
-          e quando eu consegui meu primeiro emprego, trabalhei como backend com a linguagem .NET core
-          linguagem que eu tinha pouco conhecimento
-          </li>
-          <li>
-          mas com esse trabalho consegui ter uma ótima experiência. 
           </li>
          </ul>          
         </p>  
-        <h4>Para download do meu Currículo</h4>  
+        <h4>To download my CV</h4>  
         <b-link target="_blank" href="https://drive.google.com/file/d/1LfA_nl-QMyas2R7vd-tXEaPiZlnIqGA2/view?usp=sharing">
-         Currículo <b-icon  icon="download" aria-hidden="true"/>
+         Curriculum <b-icon  icon="download" aria-hidden="true"/>
         </b-link>
+      </div>   
+        
   </div>
 </template>
 
@@ -55,7 +57,6 @@ export default {
 </script>
 
 <style scoped>
-
 a {
   color: rgb(0, 128, 85);
   text-decoration: none;
@@ -71,13 +72,15 @@ img  {
   height: 100px;
   margin: 30px;
 }
-
 p {
   margin-top: 10px;
 }
 
 h1 {
   margin: 40px 0 0;
+}
+h2 {
+  font-weight: 700;
 }
 ul {
   list-style-type: none;
