@@ -11,20 +11,21 @@
             </li>
             <li>
               <a href="https://github.com/Henrique-Hoi-Dev" target="_blank"  style="color:#fff">
-                <b-icon icon="github"  scale="2" aria-hidden="true" />
+              <b-icon icon="github"  scale="2" aria-hidden="true" />
               </a>  
             </li>
             <li>
               <a href="https://www.linkedin.com/in/henrique-hoinacki-a98b851a5/"  target="_blank" style="color:#fff">
-                <b-icon icon="linkedin"  scale="2" aria-hidden="true" />
+              <b-icon icon="linkedin"  scale="2" aria-hidden="true" />
               </a>
             </li>
             <li>
-            <a href="https://henrique-hoi-dev.github.io/portfolio/" target="_blank">henrique-hoi-dev/portfolio</a>
+              <img src="../assets/logo-.png" alt="logo">
+              <a href="https://henrique-hoi-dev.github.io/portfolio/" target="_blank">henrique-hoi-dev/portfolio</a>
             </li>
             <li>
-                <img src="../assets/rocketseat.png" alt="rockeseat">
-                <a href="https://app.rocketseat.com.br/me/henrique-hoinacki-1591931998" target="_blank"> rocketseat.com.br/me/henrique-hoinacki</a>
+              <img src="../assets/rocketseat.png" alt="rockeseat">
+              <a href="https://app.rocketseat.com.br/me/henrique-hoinacki-1591931998" target="_blank"> rocketseat.com.br/me/henrique-hoinacki</a>
             </li>
           </div>
         </mdb-col>

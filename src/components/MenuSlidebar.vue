@@ -69,7 +69,4 @@ export default {
  .b-avatar .b-avatar-img img {
   border: 3px solid #ced2d8;
  }
- /* .b-icon.bi {
-   color: #fff;
- } */
 </style>

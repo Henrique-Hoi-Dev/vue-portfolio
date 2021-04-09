@@ -15,46 +15,60 @@
       <b-img :src="require('@/assets/nodejs.png')"></b-img>
       </div>
     </div>
-      <div class="animate__animated animate__fadeInRight animate__fast">
+      <div class="text">
         <p>
-         <ul>
-          <li>
-          I started working at an internet provider,
-          that period was where I had my first contacts with linux servers
-          </li>
-          <li>
-          to make settings and put some web
-          website on the air by Apache
-          I worked there for a while, but I had to move to another city       
-          </li>
-          <li>
-          there was where I got a job
-          of technician where I did maintenance and configuration of television sets,         
-          </li>
-          <li>
-          but i also worked doing some freelance developing some portals and
-          dashboard using ReactJS
-          </li>
-          <li>
-          and nodeJS and postgreSQL database
-          after a while I decided to find a job in the area of development
-          <br>
-           and when I got my first job, I worked as a backend with the .NET core language   
-          </li>
-          <li>
-          language that I had little knowledge
-          but with this work I managed to have a great experience.   
-          </li>
-          <li>
-          </li>
+          <ul class="animate__animated animate__fadeInRight animate__fast">
+            <li>
+              I started working at an internet provider,
+            </li>
+            <li>
+              that period was where I had my first contacts with linux servers
+            </li>
+            <li>
+                to make settings and put some web website on the air by Apache
+            </li>
+            <li>
+              I worked there for a while, but I had to move to another city       
+            </li>
+          </ul>
+          <ul class="animate__animated animate__fadeInLeft animate__fast">
+            <li>
+              there was where I got a job of technician where I did maintenance and 
+            </li>
+            <li>
+              configuration of television sets, but i also worked doing some freelance
+            </li>
+            <li>
+               developing some portals and dashboard using ReactJS
+            </li>
+          </ul>
+          <ul class="animate__animated animate__fadeInRight animate__fast">
+            <li>
+              and nodeJS and postgreSQL database after a while I   
+            </li>
+            <li>
+              decided to find a job in the area of development
+            </li>
+            <li>            
+              and when I got my first job, I worked as a backend with the .NET core language 
+            </li>
+            <li>
+              language that I had little knowledge
+            </li>
+            <li>
+              but with this work I managed to have a great experience.   
+            </li>
+            <li>
+            </li>
          </ul>          
-        </p>  
-        <h4>To download my CV</h4>  
-        <b-link target="_blank" href="https://files.fm/down.php?i=faygfmyv8&n=henriquehoinacki_desenvolvedor-web.pdf">
-         Curriculum <b-icon  icon="download" aria-hidden="true"/>
-        </b-link>
-      </div>   
-        
+        </p>
+      </div> 
+      <div class="animate__animated animate__fadeInLeft animate__fast">
+          <h4>To download my CV</h4>  
+          <b-link target="_blank" href="https://files.fm/down.php?i=faygfmyv8&n=henriquehoinacki_desenvolvedor-web.pdf">
+          Curriculum <b-icon  icon="download" aria-hidden="true"/>
+          </b-link>
+      </div>     
   </div>
 </template>
 
@@ -79,6 +93,10 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+}
+.text {
+  width: 800px;
+  margin: 10px auto;
 }
 img  {
   width: 100px;
@@ -109,5 +127,8 @@ li {
   flex-direction: column;
   justify-content: center;
   }
+  .text {
+  width: auto;
+}
 }
 </style>
