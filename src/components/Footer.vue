@@ -2,7 +2,7 @@
   <mdb-footer color="indigo" class="font-small pt-0">
     <mdb-container>
       <mdb-row>
-        <mdb-col md="12">
+        <mdb-col md="10">
           <div class="form-icons">      
             <li>
               <a href="https://www.facebook.com/henrique.hoinacki" target="_blank" style="color:#fff" >
@@ -20,11 +20,18 @@
               </a>
             </li>
             <li>
-            <a href="https://henrique-hoi-dev.github.io/portfolio/" target="_blank">henrique-hoi-dev.github.io/portfolio</a>
+            <a href="https://henrique-hoi-dev.github.io/portfolio/" target="_blank">henrique-hoi-dev/portfolio</a>
+            </li>
+            <li>
+                <img src="../assets/rocketseat.png" alt="rockeseat">
+                <a href="https://app.rocketseat.com.br/me/henrique-hoinacki-1591931998" target="_blank"> rocketseat.com.br/me/henrique-hoinacki</a>
             </li>
           </div>
         </mdb-col>
-        <mdb-col md="12">
+        <mdb-col md="10">
+          In addition to my social networks if you want to talk to me exchange an idea has my contacts
+        </mdb-col>
+        <mdb-col md="10">
           <div class="form-icons">
             <li>
                 <b-icon icon="envelope"  scale="2" aria-hidden="true" /> riqueah@gmail.com
@@ -63,6 +70,9 @@ li {
 svg {
   margin-right: 10px;
 }
+img {
+  margin-right: 3px;
+}
 .form-icons {
   display: flex;
   flex-direction: row;
@@ -75,5 +85,11 @@ footer.page-footer .footer-copyright {
     overflow: hidden;
     color: rgba(255,255,255,0.6);
     background-color: rgba(0,0,0,0.2);
+}
+@media (max-width: 800px) {
+.form-icons {
+  display: flex;
+  flex-direction: column;
+  }
 }
 </style>

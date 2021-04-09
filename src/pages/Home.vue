@@ -1,11 +1,19 @@
 <template>
   <div class="hello">
       <h2>A little of my history</h2>
-    <div class="animate__animated animate__fadeInLeft animate__fasts">
-      <b-img :src="require('@/assets/javaScript.png')"></b-img>
+    <div class="logos">
+      <div class="animate__animated animate__flipInX animate__fasts">
+        <b-img :src="require('@/assets/javaScript.png')"></b-img>
+      </div>
+      <div class="animate__animated animate__fadeInDown animate__fasts">
       <b-img :src="require('@/assets/logo.png')"></b-img>
-      <b-img :src="require('@/assets/react.png')"></b-img>
+      </div>
+      <div class="w3-spin">
+        <b-img :src="require('@/assets/react.png')"></b-img>
+      </div>
+      <div class="animate__animated animate__flipInX animate__fasts">
       <b-img :src="require('@/assets/nodejs.png')"></b-img>
+      </div>
     </div>
       <div class="animate__animated animate__fadeInRight animate__fast">
         <p>
@@ -67,6 +75,11 @@ a {
 .hello {
   margin-top: 10px;
 }
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
 img  {
   width: 100px;
   height: 100px;
@@ -89,5 +102,12 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
+}
+@media (max-width: 800px) {
+  .logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
 }
 </style>
