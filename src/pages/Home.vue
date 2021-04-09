@@ -42,7 +42,7 @@
          </ul>          
         </p>  
         <h4>To download my CV</h4>  
-        <b-link target="_blank" href="https://drive.google.com/file/d/1LfA_nl-QMyas2R7vd-tXEaPiZlnIqGA2/view?usp=sharing">
+        <b-link target="_blank" href="https://files.fm/down.php?i=faygfmyv8&n=henriquehoinacki_desenvolvedor-web.pdf">
          Curriculum <b-icon  icon="download" aria-hidden="true"/>
         </b-link>
       </div>   
