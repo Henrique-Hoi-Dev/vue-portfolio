@@ -120,6 +120,8 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
+
+  font-family: Lexend ,sans-serif;
 }
 @media (max-width: 800px) {
   .logos {
@@ -128,7 +130,7 @@ li {
   justify-content: center;
   }
   .text {
-  width: auto;
-}
+    width: auto;
+  }
 }
 </style>

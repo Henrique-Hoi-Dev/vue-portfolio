@@ -20,10 +20,6 @@
               </a>
             </li>
             <li>
-              <img src="../assets/logo-.png" alt="logo">
-              <a href="https://henrique-hoi-dev.github.io/portfolio/" target="_blank">henrique-hoi-dev/portfolio</a>
-            </li>
-            <li>
               <img src="../assets/rocketseat.png" alt="rockeseat">
               <a href="https://app.rocketseat.com.br/me/henrique-hoinacki-1591931998" target="_blank"> rocketseat.com.br/me/henrique-hoinacki</a>
             </li>

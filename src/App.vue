@@ -1,19 +1,25 @@
 <template>
   <div id="app">
-    <Header/>
-    <router-view />
-    <div id="footer">
-      <Footer />  
+    <div id="menu-header">
+      <Menu id="menu"/>
+      <main>
+        <Header id="header"/>     
+        <router-view />
+        <div id="footer">
+          <Footer />  
+        </div>
+      </main> 
     </div>
   </div>
 </template>
 
 <script>
 import Header from '@/components/Header.vue'
+import Menu from '@/components/Menu.vue'
 import Footer from '@/components/Footer.vue'
 
 export default {
-  components: { Header, Footer }
+  components: { Header, Footer, Menu }
 }
 </script>
 <style lang="scss">
@@ -24,11 +30,26 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+#menu-header {
+  display: flex;
+  
+  main {
+    flex: 1
+  }
+}
+#menu {
+  width: 12rem;
+  max-height: 150.9vh;
+  background: #343a40;
+}
+#header {
+  width: 100%;
+}
 #footer {
   bottom:0;
   width:100%;
   padding-top:20px;
-  margin-top: 220px;
+  margin-top: 100px;
   color:white;
   background-color:#3e4551 !important;
   display:flex;
