@@ -71,6 +71,7 @@ export default {
     justify-content: center;
     
     padding: 20px;
+    margin-top: 50px;
   }
   .card-img-bottom {
     max-width: 300px
@@ -80,5 +81,10 @@ export default {
   }
   .card {
     max-width: 300px;
+  }
+  @media (max-width: 700px) {
+    .card-grid {
+      margin-top: 200px;
+    }
   }
 </style>

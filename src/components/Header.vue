@@ -1,9 +1,7 @@
 <template>
   <div >
   <b-navbar class="menu" type="dark" variant="dark">
-      <div >
         <h2 v-html="paper"></h2>
-      </div>
   </b-navbar>
 </div>
 </template>
@@ -60,6 +58,15 @@ h2 {
 .bg-dark {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+  h2 {
+    font-size: 15px;
+  }
+  .menu {
+    height: 7rem;
+  }
 }
 </style>
 

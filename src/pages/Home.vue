@@ -125,9 +125,9 @@ li {
 }
 @media (max-width: 800px) {
   .logos {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   .text {
     width: auto;

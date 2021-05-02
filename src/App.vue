@@ -39,7 +39,7 @@ export default {
 }
 #menu {
   width: 12rem;
-  max-height: 150.9vh;
+  max-height: 250.9vh;
   background: #343a40;
 }
 #header {
@@ -55,5 +55,22 @@ export default {
   display:flex;
   flex-direction:column;
   align-items:center;
+}
+@media (max-width: 800px) {
+  #menu-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  #menu {
+    margin-top: -20px; 
+    width: 4rem;
+    max-height: 370.9vh;
+  }
+  .b-avatar {
+    margin-left: 5px;
+    width: 50px!important;
+    height: 50px!important;
+  }
 }
 </style>

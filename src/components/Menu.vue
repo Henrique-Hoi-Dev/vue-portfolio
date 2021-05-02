@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div  class="menu">
       <template>
         <div class="mb-2">
           <b-avatar class="avatar" src="https://files.fm/thumb_show.php?i=v9ff6wnfg" 
@@ -44,10 +44,6 @@ export default {
   
   margin-top: 5px;
   text-decoration: none;
-
-  svg {
-    align-items: center;
-  }
  }
  .btn a {
   color: #ced2d8;
@@ -70,4 +66,18 @@ export default {
  .b-avatar {
   border: 3px solid purple;
  }
+ @media (max-width: 800px) {
+
+  .px-2 {
+    margin: 95px 0 0 70px;
+  }
+  .btn {
+    margin-top: 10px;
+    text-decoration: none;
+  }
+  .btn a {
+    width: 50px; 
+    text-decoration: none;
+  }
+}
 </style>
