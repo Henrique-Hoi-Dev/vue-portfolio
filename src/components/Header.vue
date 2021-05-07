@@ -47,13 +47,13 @@ export default {
 </script>
 <style scoped>
 h2 {
-  color:purple;
+  color: #F7FFF7;
   font-family: Lexend ,sans-serif;
-  border-right: 4px purple solid;
+  border-right: 4px #F7FFF7 solid;
   animation: typebar 0.s steps(40) infinite;
 }
 .menu {
-  height: 70px;
+  height: 80px;
 }
 .bg-dark {
   display: flex;
@@ -63,9 +63,6 @@ h2 {
 @media (max-width: 700px) {
   h2 {
     font-size: 15px;
-  }
-  .menu {
-    height: 7rem;
   }
 }
 </style>

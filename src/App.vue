@@ -64,7 +64,7 @@ export default {
   }
   #menu {
     margin-top: -20px; 
-    width: 4rem;
+    width: 4.9rem;
     max-height: 370.9vh;
   }
   .b-avatar {

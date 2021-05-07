@@ -82,9 +82,4 @@ export default {
   .card {
     max-width: 300px;
   }
-  @media (max-width: 700px) {
-    .card-grid {
-      margin-top: 200px;
-    }
-  }
 </style>

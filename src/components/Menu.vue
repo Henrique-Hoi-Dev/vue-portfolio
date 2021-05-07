@@ -2,82 +2,141 @@
   <div  class="menu">
       <template>
         <div class="mb-2">
-          <b-avatar class="avatar" src="https://files.fm/thumb_show.php?i=v9ff6wnfg" 
-          size="6rem"></b-avatar>
+          <b-avatar class="avatar" src="https://media-exp1.licdn.com/dms/image/C4D03AQHIFsXtyszNCA/profile-displayphoto-shrink_800_800/0/1617899245079?e=1625702400&v=beta&t=7jAxSyrvBIN7MqTxQlkg2I5eHcj8y2AFAmCLbU-Uk9o" 
+          size="6rem">
+          </b-avatar>
+        </div>
+        <div>
+          <p> {{ getFormat() }} </p>
         </div>
       </template>
       <div class="px-2 py-2">
-       <b-button variant="primary" to="/"> 
-            Home <b-icon icon="list-nested" />
-       </b-button>
-       <b-button variant="primary" type="primary" to="/story"> 
-            My resume <b-icon icon="person-fill" />
-       </b-button>
-       <b-button variant="primary">
-            <b-link href="https://www.linkedin.com/in/henrique-hoinacki-a98b851a5/"  target="_blank">
-              Linkedin <b-icon icon="linkedin" /> 
-           </b-link>  
-       </b-button>
-       <b-button variant="primary">
-            <b-link href="https://github.com/Henrique-Hoi-Dev"  target="_blank">
-              Github <b-icon icon="github" /> 
-           </b-link>  
-       </b-button>
+        <b-button  variant="info" to="/"> 
+          Home <b-icon icon="list-nested" />
+        </b-button>
+        <b-button  variant="info" to="/story"> 
+          Resume <b-icon icon="person-fill" />
+        </b-button>
+        <b-button  variant="info">
+          <b-link href="https://www.linkedin.com/in/henrique-hoinacki-a98b851a5/"  target="_blank">
+            Linkedin <b-icon icon="linkedin" /> 
+          </b-link>  
+        </b-button>
+        <b-button  variant="info">
+          <b-link href="https://github.com/Henrique-Hoi-Dev"  target="_blank">
+            Github <b-icon icon="github" /> 
+          </b-link>  
+        </b-button>
+        <!-- botao modo celular -->
+        <button  @click="$router.push('/')" class="bt-menu" type="button">
+          <b-icon icon="list-nested" />
+        </button>
+        <button  @click="$router.push('/story')" class="bt-menu" type="button">
+          <b-icon icon="person-fill" />
+        </button>
+        <button class="bt-menu" type="button">         
+          <a href="https://www.linkedin.com/in/henrique-hoinacki-a98b851a5/" target="_blank">
+            <b-icon icon="linkedin" />
+          </a>
+        </button>
+        <button class="bt-menu" type="button">  
+          <a href="https://github.com/Henrique-Hoi-Dev" target="_blank">
+            <b-icon icon="github" />
+          </a>
+        </button>
+
       </div>
   </div>
 </template>
 
 <script>
-export default {
+import { format } from 'date-fns';
+import { enUS } from 'date-fns/locale';
+window.locale = enUS
 
+export default {
+  data () {
+    return {
+      format,
+    }
+  },
+  methods: {
+    getFormat () {
+      return this.format(new Date(), 'EEEEEE, d MMMM, yyyy HH:mm', {locale: window.locale})
+    } 
+  }
 }
 </script>
 
 <style scoped lang="scss">
+  p {
+    color: #F7FFF7;
+  }
  .px-2 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
  }
  .btn {
-  width: 8.2rem;
-  
-  margin-top: 5px;
-  text-decoration: none;
+    width: 8.2rem;
+
+    margin-top: 5px;
+    font-family: Lexend ,sans-serif;
  }
  .btn a {
-  color: #ced2d8;
-  text-decoration: none;
-  align-items: center;
+    color: #ced2d8;
+    text-decoration: none;
+    align-items: center;
  }
  .px-2 button {  
-  width: 8.2rem;
+    width: 8.2rem;
 
-  color: #ced2d8;
-  font-family: Lexend ,sans-serif;
+    color: #ced2d8;
+    font-family: Lexend ,sans-serif;
  }
  .mb-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-  height: 8rem;
+    height: 8rem;
  }
  .b-avatar {
-  border: 3px solid purple;
+    border: 2px solid #A1FF0A;
  }
+ @media (min-width: 800px) {
+  .bt-menu {
+    display: none;
+  }
+  .bt-menu a {
+    display: none;
+  }
+ }
+ 
  @media (max-width: 800px) {
-
   .px-2 {
-    margin: 95px 0 0 70px;
+    margin: 20px 0 0 70px;
   }
   .btn {
     margin-top: 10px;
-    text-decoration: none;
+    display: none;
   }
   .btn a {
-    width: 50px; 
+    width: 20px; 
+  }
+  .bt-menu {
+    width: 55px!important;
+    margin-right: 80px;
+    border-radius: 3px;
+    margin-top: 5px;
+    background-color: #17a2b8;
+    svg {
+      color: #F7FFF7;
+    } 
+  }
+  .bt-menu a {
     text-decoration: none;
+    color: #F7FFF7;
   }
 }
 </style>
