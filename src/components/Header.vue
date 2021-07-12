@@ -1,56 +1,49 @@
 <template>
-  <div >
-  <b-navbar class="menu" type="dark" variant="dark">
-        <h2 v-html="paper"></h2>
-  </b-navbar>
-</div>
+  <div>
+    <b-navbar class="menu" type="dark" variant="dark">
+      <h2 v-html="paper"></h2>
+    </b-navbar>
+  </div>
 </template>
 
 <script>
-
 export default {
-  name: "Header",
+  name: 'Header',
   data() {
     return {
-      titeleText: "My name - Henrique Hoinacki .... Developer Web    ",
+      titeleText: 'My name - Henrique Hoinacki .... Developer Web    ',
       paper: '',
-      timer: null
-    }
+      timer: null,
+    };
   },
   mounted() {
-    this.printer()
+    this.printer();
   },
   methods: {
     printer() {
-      this.stoper()
-      let i = -1
+      let i = -1;
       this.timer = setInterval(() => {
-        i++
-        const x = i%this.titeleText.length
-        this.paper += this.titeleText[x]
-      }, 200-(Math.random()*50))
+        i++;
+        const x = i % this.titeleText.length;
+        this.paper += this.titeleText[x];
+      }, 200 - Math.random() * 50);
     },
-    stoper() {
-      clearInterval(this.timer )
-      this.paper = ''
-    }
   },
   watch: {
-    paper:function() {
-      if(this.paper.length == this.titeleText.length){
-        this.paper = ''
+    paper: function() {
+      if (this.paper.length == this.titeleText.length) {
+        clearInterval(this.timer);
       }
-    }
-   }
-
+    },
+  },
 };
 </script>
 <style scoped>
 h2 {
-  color: #F7FFF7;
-  font-family: Lexend ,sans-serif;
-  border-right: 4px #F7FFF7 solid;
-  animation: typebar 0.s steps(40) infinite;
+  color: #f7fff7;
+  font-family: Lexend, sans-serif;
+  border-right: 4px #f7fff7 solid;
+  animation: typebar 0s steps(40) infinite;
 }
 .menu {
   height: 80px;
@@ -66,4 +59,3 @@ h2 {
   }
 }
 </style>
-

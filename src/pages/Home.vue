@@ -17,64 +17,96 @@
     </div>
       <div class="text">
         <p>
-          <ul class="animate__animated animate__fadeInRight animate__fast">
-            <li>
-              I started working at an internet provider,
-            </li>
-            <li>
-              that period was where I had my first contacts with linux servers
-            </li>
-            <li>
-                to make settings and put some web website on the air by Apache
-            </li>
-            <li>
-              I worked there for a while, but I had to move to another city       
-            </li>
+          <ul class="animate__animated animate__fadeInRight animate__fasts">
+            <p>
+              Beginner in business development, I have been working for over 1 year with ASP .Net Core,
+              <br> 
+              in projects that I already work as a freelancer, I used modern and functional methodologies for 
+              <br>
+              better performance in my development projects, I have high knowledge with Native JavaScript, 
+              <br>
+              libraries like VueJS , ReactJS and NodeJS, following these technologies I usually adopt 
+              <br>
+              the implementation of versioned Dockerization and code versioning with Github.
+            </p>     
           </ul>
           <ul class="animate__animated animate__fadeInLeft animate__fast">
-            <li>
-              there was where I got a job of technician where I did maintenance and 
-            </li>
-            <li>
-              configuration of television sets, but i also worked doing some freelance
-            </li>
-            <li>
-               developing some portals and dashboard using ReactJS
-            </li>
+            <p>
+              Currently, my focus is on agile development and looking to improve my career,
+              <br> 
+              I tend to be always up to date on what is happening in the world of
+              <br>
+              JS developers, new frameworks and libraries.
+            </p>
           </ul>
           <ul class="animate__animated animate__fadeInRight animate__fast">
-            <li>
-              and nodeJS and postgreSQL database after a while I   
-            </li>
-            <li>
-              decided to find a job in the area of development
-            </li>
-            <li>            
-              and when I got my first job, I worked as a backend with the .NET core language 
-            </li>
-            <li>
-              language that I had little knowledge
-            </li>
-            <li>
-              but with this work I managed to have a great experience.   
-            </li>
-            <li>
-            </li>
+            <p>
+              My web developer skills: VueJs and React, Hooks and Context Api; 
+              <br>
+              Stylized Components, Stylized System; Formik and Yup; Tests with Jest and Cypress; 
+              <br>
+              Monorepo; ASP .Net Core; NodeJS; AWS; Docker;
+            </p>
          </ul>          
         </p>
-      </div> 
-      <div class="animate__animated animate__fadeInLeft animate__fast">
-          <h4>To download my CV</h4>  
-          <b-link target="_blank" href="https://files.fm/down.php?i=faygfmyv8&n=henriquehoinacki_desenvolvedor-web.pdf">
-          Curriculum <b-icon  icon="download" aria-hidden="true"/>
-          </b-link>
+      </div>
+        <div id="barras" class="animate__animated animate__fadeInLeft animate__fast" >
+          <div class="progres">
+            <h5>ReactJS</h5>
+            <b-progress 
+              :value="value[0]" 
+              show-progress 
+              variant="primary" 
+              striped :animated="animate"
+              ></b-progress>
+            <h5>Vue.JS</h5>
+            <b-progress 
+              :value="value[1]" 
+              show-progress 
+              variant="success" 
+              striped :animated="animate"
+              ></b-progress>
+            <h5>Node.JS</h5>
+            <b-progress 
+              :value="value[2]" 
+              show-progress 
+              variant="dark" 
+              striped :animated="animate"
+              ></b-progress>
+            <h5>ASP.NET Core</h5>
+            <b-progress 
+              :value="value[3]" 
+              show-progress 
+              variant="secondary" 
+              striped :animated="animate"
+              ></b-progress>
+            <h5>C#</h5>
+            <b-progress 
+              :value="value[4]" 
+              show-progress 
+              variant="danger" 
+              striped :animated="animate"
+              ></b-progress>
+          </div> 
+        </div>
+      <div>
+        <h4>To download my CV</h4>  
+        <b-link target="_blank" href="https://files.fm/down.php?cf&i=6pvs9q6ru&n=henriquehoinacki_desenvolvedorweb.pdf">
+        Curriculum <b-icon  icon="download" aria-hidden="true"/>
+        </b-link>
       </div>     
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+  data() {
+      return {
+        value: [70, 50, 40, 30, 30],
+        animate: true
+      }
+    }
 };
 </script>
 
@@ -98,6 +130,13 @@ a {
   width: 800px;
   margin: 10px auto;
 }
+#barras {
+  margin-right: 20rem;
+  margin-bottom: 5rem;
+}
+.progres {
+  margin-left: 20rem;
+}
 img  {
   width: 100px;
   height: 100px;
@@ -105,6 +144,10 @@ img  {
 }
 p {
   margin-top: 10px;
+  display: inline-block;
+  margin: 0 10px;
+
+  font-family: Lexend ,sans-serif;
 }
 
 h1 {
@@ -113,15 +156,12 @@ h1 {
 h2 {
   font-weight: 700;
 }
+h5 {
+  margin-top: 2rem;
+}
 ul {
   list-style-type: none;
   padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-
-  font-family: Lexend ,sans-serif;
 }
 @media (max-width: 800px) {
   .logos {
@@ -131,6 +171,12 @@ li {
   }
   .text {
     width: auto;
+  }
+  #barras {
+  margin-right: 3rem;
+  }
+  .progres {
+  margin-left: 3rem;
   }
 }
 </style>
